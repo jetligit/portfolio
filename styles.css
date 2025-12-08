@@ -1,0 +1,26 @@
+.button-box {
+    margin-left: 690px; 
+}
+
+.button-box button{
+    height: 30px;
+    width: 60px;
+    font-size: 18px;
+    border-radius: 8px;  
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-box button:hover {
+    color: rgb(106, 197, 227);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+

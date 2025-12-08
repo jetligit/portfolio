@@ -1,0 +1,51 @@
+/*********** TOP **********/
+.top {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative; 
+}
+
+.top h1 {
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.home-button {
+    position: absolute;
+    right: 20px;   
+    height: 30px;
+    cursor: pointer;
+}
+
+.left {
+    width: 100px; 
+}
+
+
+/********** Content **********/
+h3{
+    margin-bottom: 0;
+}
+
+.project {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;  
+}
+
+
+.poster img {
+    width: 500px;
+    height: auto;
+    border: 3px solid black;
+}
+
+ul{
+    max-width: 500px;
+}
+
+p{
+    max-width: 500px;
+}
+
