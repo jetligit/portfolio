@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+.database {
+    width: 700px;
+    height: auto;
+}
+
+.poster {
+    margin-top: 20px;
+    width: 800px;
+    height: auto;
+    border: 2px solid black;
+}
+
+p{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.img-txt-box {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;  
+    margin: 0 auto; 
+}
+
