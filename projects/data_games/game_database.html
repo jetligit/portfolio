@@ -9,49 +9,61 @@
 <body>
     <h1> Video Game Database Project </h1>
 
-    <div class = "img-txt-box">
-        <img class = "database" src = "database.png" alt = "Database Image"> 
+    <p class = "summary"> 
+        This was a project done in a team of four. This is a video game database project is a PostgreSQL-backed command line interface 
+        application. We used a relational database to store information about video games and users. Using the command line, users are 
+        able to create an account, login, play games, search for games, create and edit their collections of video games, rate games, 
+        get game recommendations, get the top 20 most popular games, and more. When users enter in information or run commands, SQL 
+        prepared statements are executed and the relevant information in the database is returned or stored.  
+    </p>
 
-        <p> This was a project done in a team of four. This is a video game database project is a PostgreSQL-backed command line interface 
-            application. We used a relational database to store information about video games and users. Using the command line, users are 
-            able to create an account, login, play games, search for games, create and edit their collections of video games, rate games, 
-            get game recommendations, get the top 20 most popular games, and more. 
-        </p>
+    <div class = "skills-apps">
+        <p class = "skills"> Skills used: Java, SQL, Github, Excel</p>
+        <p class = "applications"> Applications used: Datagrip and IntelliJ</p>
     </div>
 
-    <h2> How it works: </h2>
-    <p> When users enter in information or run commands, SQL prepared statements are executed and the relevant information in the 
-        database is returned or stored.  
-    </p>
+    <h1 class = "phase" > Phase One: </h1>
+    <div class = "img-txt-box-er">
+        <p class = "erp"> 
+            We first had to make a plan for the project. We designed an Entity-Relationship (ER) Diagram to desribe how each entity in 
+            the project relates to one another. Then we reduced this ER diagram into tables to help us plan what to put in the 
+            database. Finally, we laid out some constraints for our data. 
+        </p>
+        <div>
+            <img class = "er" src = "er_diagram.png" alt = "ER Diagram">
+        </div>
+    </div>
 
-    <h2> The process: </h2>
-    <h3> Phase 1: </h3>
-    <p> 
-        We first had make a plan for the project. We designed an Entity-Relationship (ER) Diagram to desribe how each entity in the
-        project relates to one another. Then we reduced this ER diagram into tables to help us plan what to put in the database. 
-        Finally, we laid out some constraints for our data. 
-    </p>
-    <h3> Phase 2: </h3>
-    <p> 
-        With our planning finished, we then moved on to the database and application side of things. We generated user and video game
-        data using ChatGPT and populated our database tables with it. Then, we used Java and SQL to create the command line interface 
-        and implement most of the required functionalities including collection creation, playing, making accounts and loggin in. 
-    </p>
-    <h3> Phase 3: </h3>
-    <p> 
-        We finished implementing the rest of the functionalities and ensured everything was working properly with in depth testing. 
-        Then, we performed data analysis on our data using code and graphs in Excel to find trends. Finally, we used the results
-        from our data analysis to create our poster. 
-    </p>
+    <h1 class = "phase" > Phase Two: </h1>
+    <div class = "img-txt-box-er">
+        <div>
+            <p class = "erp"> 
+                With our planning finished, we then moved on to the database and application side of things. We generated user and video 
+                game data using ChatGPT and populated our database tables with it. Then, we used Java and SQL to create the command line 
+                interface and implement most of the required functionalities including collection creation, playing, making accounts and 
+                logging in. 
+            </p>
+        </div>
+        <img class = "database" src = "database.png" alt = "Database Image">
+    </div>
+
+    <h1 class = "phase" > Phase Three: </h1>
+    <div class = "img-txt-box-er">
+        <div>
+            <p class = "erp"> 
+                We finished implementing the rest of the functionalities and ensured everything was working properly with in depth testing. 
+                Then, we performed data analysis on our data using code and graphs in Excel to find trends. Finally, we displayed the results
+                from our data analysis to create our poster. 
+            </p>
+        </div>
+        <img class = "poster" src = "data_poster.png" alt = "Database Analysis Poster">
+    </div>
 
     <div>
         <a href="Application_Domain.pdf" download>Download our Application Domain</a>
     </div>
 
-    <img class = "poster" src = "data_poster.png" alt = "Data Analysis Poster">
 
-    <p> Skills used: Java, SQL, Github, Excel</p>
-    <p> Applications used: Datagrip and IntelliJn</p>
 </body>
 
 
