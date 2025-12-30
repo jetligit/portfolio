@@ -28,7 +28,6 @@
 }
 
 html, body {
-    background-color: rgb(100, 175, 246);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -62,7 +61,7 @@ h2.process {
 }
 
 .er {
-    width: 750px;
+    width: 800px;
     height: auto;
     border: 2px solid black;
     display: block;       /* makes margin auto work */
@@ -70,13 +69,15 @@ h2.process {
 }
 
 .database {
-    width: 650px;
-    height: 400px;
+    width: 800px;
+    height: auto;
     border: 2px solid black;
+    display: block;       /* makes margin auto work */
+    margin: 0 auto; 
 }
 
 .poster {
-    width: 650px;
+    width: 800px;
     height: auto;
     border: 2px solid black;
 }
@@ -86,18 +87,28 @@ p{
     margin-top: 0px;
 }
 
-p.summary{
+p.summary {
+    width: 1200px;
+    margin: 15px auto;
     font-size: 22px;
-    text-indent: 2em;
-    margin-bottom: 20px;
+    text-align: left;
+    text-indent: 2em;   /* only first line indented */
+    line-height: 1.2;
+}
+
+
+p.er_diagram{
+    width: 800px;
+
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 30px;
 }
 
 p.erp{
     font-size: 25px;
     margin-top: 0px;
     text-align: center;
-    
-    
 }
 
 p.top-skills{
@@ -138,5 +149,11 @@ p.bot-apps{
     max-width: 1100px;  
     margin: 0 auto;
     margin-bottom: 40px; 
+}
+
+a{
+    display: block;
+    text-align: center;
+    font-size: 18px;
 }
 
