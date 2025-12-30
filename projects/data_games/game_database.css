@@ -1,5 +1,35 @@
+.home-button {
+    position: absolute;
+    right: 20px;   
+    height: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.button-box button {
+    height: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-box button:hover {
+    color: rgb(106, 197, 227);
+}
+
 html, body {
     background-color: rgb(100, 175, 246);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -8,10 +38,13 @@ h1 {
     font-size: 35px;
 }
 
+h1.title {
+    margin-bottom: 5px;
+}
+
 h1.phase {
     margin-top: 0px;
-    text-align: left;
-    text-indent: 19em;
+    text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
 }
@@ -29,9 +62,11 @@ h2.process {
 }
 
 .er {
-    width: 650px;
-    height: 550px;
+    width: 750px;
+    height: auto;
     border: 2px solid black;
+    display: block;       /* makes margin auto work */
+    margin: 0 auto; 
 }
 
 .database {
@@ -60,24 +95,40 @@ p.summary{
 p.erp{
     font-size: 25px;
     margin-top: 0px;
+    text-align: center;
+    
+    
 }
 
-p.skills{
+p.top-skills{
     font-size:22px;
-    text-indent: 2em;
+    text-indent: 11em;
+    margin-bottom: 5px; 
+}
+
+p.top-apps{
+    font-size:22px;
+    text-indent: 3em;
+    text-align: right;
+    margin-bottom: 5px; 
+}
+
+p.bot-skills{
+    font-size:18px;
+    text-indent: 11em;
     margin-bottom: 10px; 
 }
 
-p.applications{
-    font-size:22px;
-    text-indent: 2em;
+p.bot-apps{
+    font-size:18px;
+    text-indent: 0em;
     text-align: right;
-    margin-bottom: 30px; 
+    margin-bottom: 10px; 
 }
 
 .skills-apps {
     display: flex;
-    gap: 590px;
+    gap: 700px;
     margin-bottom: 0px;
 }
 

@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="game_database.css">
 </head>
 <body>
-    <h1> Video Game Database Project </h1>
+    <button class="home-button" onclick="goToPage('../../../index.html')">Home Page</button>
+    <h1 class = "title"> Video Game Database Project </h1>
+    <div class = "button-box"> 
+        <button onclick="goToPage('/about/about.html')"> About </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Projects </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Contact </button>
+    </div>
+
+    
 
     <p class = "summary"> 
         This was a project done in a team of four. This is a video game database project is a PostgreSQL-backed command line interface 
@@ -17,22 +25,26 @@
         prepared statements are executed and the relevant information in the database is returned or stored.  
     </p>
 
-    <div class = "skills-apps">
-        <p class = "skills"> Skills used: Java, SQL, Github, Excel</p>
-        <p class = "applications"> Applications used: Datagrip and IntelliJ</p>
-    </div>
+    
+        <div class = "skills-apps">
+            <p class = "top-skills"> Skills used: </p>
+            <p class = "top-apps"> Apps used: 
+        </div>
+        <div class = "skills-apps">
+            <p class = "bot-skills">Java, SQL, Github, Excel</p>
+            <p class = "bot-apps"> Datagrip and IntelliJ</p>
+        </div>
 
     <h1 class = "phase" > Phase One: </h1>
-    <div class = "img-txt-box-er">
-        <p class = "erp"> 
+    <div>
+        <img class = "er" src = "er_diagram.png" alt = "ER Diagram">
+    </div>    
+    <p class = "erp"> 
             We first had to make a plan for the project. We designed an Entity-Relationship (ER) Diagram to desribe how each entity in 
             the project relates to one another. Then we reduced this ER diagram into tables to help us plan what to put in the 
             database. Finally, we laid out some constraints for our data. 
-        </p>
-        <div>
-            <img class = "er" src = "er_diagram.png" alt = "ER Diagram">
-        </div>
-    </div>
+    </p>
+
 
     <h1 class = "phase" > Phase Two: </h1>
     <div class = "img-txt-box-er">
@@ -63,9 +75,6 @@
         <a href="Application_Domain.pdf" download>Download our Application Domain</a>
     </div>
 
-
+    <script src="../../index.js"></script>
 </body>
-
-
-<script src = "index.js"> </script>
 </html>
