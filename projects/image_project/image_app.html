@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Database Project</title>
+    <link rel="stylesheet" href="image_app.css">
+</head>
+<body>
+    <button class="home-button" onclick="goToPage('../../../index.html')">Home Page</button>
+    <h1 class = "title"> Image Locator Application </h1>
+    <div class = "button-box"> 
+        <button onclick="goToPage('/about/about.html')"> About </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Projects </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Contact </button>
+    </div>
+
+    <p class = "summary"> 
+        This was a personal project I decided to do because I gained the skills necessary to make a full stack application and I thought
+        it would be cool to have an app that tells you all of the places you have been. I then came up with the idea to use the EXIF
+        metadata from uploaded images and Google Maps API to display markers at the locations in which the pictures were taken. This way, 
+        users can visualize all of the locations they have been to look back on and perhaps even to return to. 
+    </p>
+
+    <div class = "top-skills-apps">
+        <p class = "top-skills"> Skills used: </p>
+        <p class = "top-apps"> Apps used: 
+    </div>
+    <div class = "bot-skills-apps">
+        <p class = "bot-skills">Angular, Java, Google Maps API, Github, HTML, CSS</p>
+        <p class = "bot-apps"> Visual Studio Code </p>
+    </div>
+
+    <h1 class = "phase" > Part One: </h1>
+    <div>
+        <img class = "nor_man" src = "nor_man.png" alt = "Norway and Manhattan markers">
+    </div>    
+    <p class = "er_diagram"> 
+        In the first part of the project, I worked on basic functionality for the project. I first imported Google Maps API and then
+        made an input button to upload images. I sent the images' data to the backend, extracted the EXIF metadata, and then 
+        sent the GPS coordinates back to the frontend so the markers can be displayed. I uploaded two images, one from New York City's
+        Korea Town and one from my parents' vacation in Norway, and in the image above, the markers are displayed in the corresponding
+        locations. 
+    </p>
+
+
+    <h1 class = "phase" > Part Two: </h1>
+    <div>
+        <img class = "date" src = "date.png" alt = "Date Display with Manhattan Marker">
+    </div>
+    <p class = "er_diagram"> 
+        In the second part of the project, since the basic functionalities were finished, I thought about adding extra functionalities
+        that would enhance the user experience. I decided to add a clear button to delete all of the markers that are currently displayed.
+        In addition, I added an info window that displays when each marker is clicked, and shows the date in which the picture was
+        taken. 
+    </p>
+
+    <script src="../../index.js"></script>
+</body>
+</html>
