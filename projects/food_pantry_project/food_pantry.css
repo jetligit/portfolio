@@ -69,7 +69,7 @@ h2.process {
 }
 
 .database {
-    width: 800px;
+    width: 700px;
     height: auto;
     border: 2px solid black;
     display: block;       /* makes margin auto work */
@@ -96,10 +96,16 @@ p.summary {
     line-height: 1.2;
 }
 
-
-p.er_diagram{
+p.sprintone {
     width: 800px;
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 30px; 
+}
 
+
+p.sprinttwo{
+    width: 1000px;
     text-align: center;
     margin: 10px auto;
     margin-bottom: 30px;
@@ -147,5 +153,10 @@ a{
     display: block;
     text-align: center;
     font-size: 18px;
+}
+
+.pages{
+    display: flex;
+    gap: 0px;
 }
 

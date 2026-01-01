@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Database Project</title>
+    <link rel="stylesheet" href="food_pantry.css">
+</head>
+<body>
+    <button class="home-button" onclick="goToPage('../../../index.html')">Home Page</button>
+    <h1 class = "title"> Food Pantry Application </h1>
+    <div class = "button-box"> 
+        <button onclick="goToPage('/about/about.html')"> About </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Projects </button> 
+        <button onclick="goToPage('/projects/projects.html')"> Contact </button>
+    </div>
+
+    <p class = "summary"> 
+        This was a project done in a team of four. This is a full stack application that models a food pantry with users and an admin.
+        The following images and details will show how our application has developed over 4 sprints. 
+    </p>
+
+    <div class = "skills-apps">
+        <p class = "top-skills"> Skills used: </p>
+        <p class = "top-apps"> Apps used: 
+    </div>
+    <div class = "skills-apps">
+        <p class = "bot-skills">Java, Angular, HTML, CSS, Agile Methodologies, Code Coverage, Code review, Testing, made stories  </p>
+        <p class = "bot-apps"> Visual Studio Code </p>
+    </div>
+
+    <h1 class = "phase" > Sprint One: </h1>
+    <div>
+        <img class = "er" src = "Sprint1/domain_analysis.png" alt = "Domain Analysis Diagram">
+    </div>    
+    <p class = "sprintone"> 
+        We first had to make a plan for the project. We designed a Domain Analysis Diagram to set up the logic behind our application.
+        When that was completed, we started working on the backend of our project. We wrote the functions for an admin to be able to 
+        add, delete, or update food items in the inventory. We then tested these functions using curl commands. 
+    </p>
+
+
+    <h1 class = "phase" > Sprint Two: </h1>
+    <div class = "pages">
+        <img class = "database" src = "Sprint2/sprint2_admin.png" alt = "Sprint 2 Admin Page">
+        <img class = "database" src = "Sprint2/sprint2_user.png" alt = "Sprint 2 User Page">
+    </div>
+    <p class = "sprinttwo"> 
+        In this sprint, we started working on our user interface and continued working on functionality. We first made a basic login page
+        that sends the user into the admin page or their own user page, depending on the credentials. Then, we made an admin page with 
+        admin add, delete, and update buttons. Next, we developed the functionality needed for the user to add or delete food items from
+        their basket and for the user to search for food items by name, and we made buttons for these. 
+
+    <h1 class = "phase" > Sprint Three: </h1>
+    <div>
+        <img class = "database" src = "" alt = "Data Analysis Poster">
+    </div>
+    <p class = "er_diagram"> 
+        We finished implementing the rest of the functionalities and ensured everything was working properly with in depth testing. 
+        Then, we performed data analysis on our data using code and graphs in Excel to find trends. Finally, we displayed the results
+        from our data analysis to create our poster. 
+    </p>
+
+    <div>
+        <a href="Application_Domain.pdf" download>Click here to download our Application Domain</a>
+    </div>
+
+    <script src="../../index.js"></script>
+</body>
+</html>
