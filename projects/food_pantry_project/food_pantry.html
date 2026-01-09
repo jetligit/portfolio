@@ -12,20 +12,20 @@
     <div class = "button-box"> 
         <button onclick="goToPage('/about/about.html')"> About </button> 
         <button onclick="goToPage('/projects/projects.html')"> Projects </button> 
-        <button onclick="goToPage('/projects/projects.html')"> Contact </button>
+        <button onclick="goToPage('/contact/contact.html')"> Contact </button>
     </div>
 
     <p class = "summary"> 
         This was a project done in a team of four. This is a full stack application that models a food pantry with users and an admin.
-        The following images and details will show how our application has developed over 4 sprints. 
+        The following images and details will show how our application has developed over  sprints. 
     </p>
 
-    <div class = "skills-apps">
+    <div class = "top-skills-apps">
         <p class = "top-skills"> Skills used: </p>
         <p class = "top-apps"> Apps used: 
     </div>
-    <div class = "skills-apps">
-        <p class = "bot-skills">Java, Angular, HTML, CSS, Agile Methodologies, Code Coverage, Code review, Testing, made stories  </p>
+    <div class = "bot-skills-apps">
+        <p class = "bot-skills">Java, Angular, HTML, CSS, Agile Methodologies, Code Coverage, Code review, Unit Testing  </p>
         <p class = "bot-apps"> Visual Studio Code </p>
     </div>
 
@@ -45,52 +45,83 @@
         <div class = page-card>
             <h2> Admin Page </h2>
             <img class = "database" src = "Sprint2/sprint2_admin.png" alt = "Sprint 2 Admin Page">
+            <p class = "sprinttwo_admin"> In this sprint, we started working on the user interface and continued creating functionality. 
+                We first made a basic login page that sends the user into the admin page or their own user page. Then, we made an admin 
+                page with add, delete, and update buttons to change the inventory. 
+            </p>
         </div>
 
         <div class = page-card>
             <h2> User Page </h2>
             <img class = "database" src = "Sprint2/sprint2_user.png" alt = "Sprint 2 User Page">
+            <p class = "sprinttwo_user"> Next, we created a user page where the food items are displayed. We then created buttons for the user to add or delete 
+                food items from their basket. We also created a search bar to enable the user to search for food items by name.
+            </p>
         </div>
     </div>
 
-    <p class = "sprinttwo"> 
-        In this sprint, we started working on our user interface and continued working on functionality. We first made a basic login page
-        that sends the user into the admin page or their own user page, depending on the credentials. Then, we made an admin page with 
-        admin add, delete, and update buttons. Next, we developed the functionality needed for the user to add or delete food items from
-        their basket and for the user to search for food items by name, and we made buttons for these. We also created a search bar that
-        returns the name of the food item that contains the search string. 
-    </p>
 
-    <h1 class = "phase" > Sprint Three: </h1>
-    <div class = page-card>
-        <h2> Login Page </h2>
-        <img class = "database" src = "Sprint3/sprint3_login.png" alt = "Sprint 3 Login Page">
+
+
+    <div class = "user-page-card">
+        <h1 class = "sprintthree" > Sprint Three: </h1>
+        <p class = "spt3_summary"> In this sprint, we finished up our project. We finished implementing our final functionalities and 
+            improved our user interface. We added vibrant colors, changed button sizing, and added an image to the login page. In our 
+            admin page, we improved the user interface and kept the functionalities the same.
+        </p>
     </div>
 
     <div class = "pages">
         <div class = page-card>
-            <h2> Admin Page </h2>
-            <img class = "database" src = "Sprint3/sprint3_admin.png" alt = "Sprint 3 Admin Page">
+            <h2> Login Page </h2>
+            <img class = "database" src = "Sprint3/sprint3_login.png" alt = "Sprint 3 Login Page">
+            <!--
+            <p class = "sprintthree_login"> In this sprint, we finished up our project. We finished implementing our final functionalities and improved our 
+                user interface. We added vibrant colors, changed button sizing, and added an image to the login page. 
+            </p>
+            -->
         </div>
 
         <div class = page-card>
-            <h2> User Page </h2>
-            <img class = "database" src = "Sprint3/sprint3_user.png" alt = "Sprint 3 User Page">
+            <h2> Admin Page </h2>
+            <img class = "database" src = "Sprint3/sprint3_admin.png" alt = "Sprint 3 Admin Page">
+            <!--
+            <p> In our admin page, we improved the user interface and kept the functionalities the same. </p>
+            -->
         </div>
     </div>
 
-    <p class = "sprinttwo"> 
-        In this sprint, we finished up our project. We added a checkout button which lets the user check out their items, thereby
-        removing the items from their basket and from the inventory respectively. We also implemented our bonus functionalities, which 
-        were a donation bank and a total contribution ranking system. We liked the idea of a donation bank because it would enable users
-        to donate money directly rather than donating a specific food item. Then, for our ranking system we labeled as top contributors, 
-        we kept track of the total contributions of each user, which includes the total amount of money they donated by buying food items 
-        and donating through the donation bank. Then, on every user page, the usernames of the top three donators would be displayed. We 
-        felt this would incentivize users to donate more and make those who have donated a large amount feel appreciated for their 
-        generosity. Then, with all of the functionalities finished, we improved our user interface. We added vibrant colors, changed
-        button sizing, and added an image to the login page. 
-    </p>
+    <div class="img_txt">
+        <div class="user-page-card">
+            <h2 class="user">User Page</h2>
+    
+            <div class="img-text-row">
+                <img class="spt3_user" src="Sprint3/sprint3_user.png" alt="Sprint 3 User Page">
+                <div>
+                    <p class="sprintthree_user">
+                        In our user page, we added a checkout button which lets the user check out their items, thereby
+                        removing the items from their basket and from the inventory respectively. We also implemented 2 bonus functionalities: 
+                        a donation bank and a total contribution ranking system.
+                    </p>
+                    <p class="sprintthree_user">
+                        We made the donation bank because it would enable users to donate 
+                        money directly rather than donating a specific food item. 
+                    </p>
+                    <p class = "sprintthree_user">
+                        Then, for our ranking system, we kept track of the total 
+                        contributions of each user, including the total contributions through buying food items and donating to the donation bank,
+                        and displayed the usernames of the top three donators on every user page. We wanted to incentivize users to donate 
+                        more while also showing appreciation for those who have donated a significant amount.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
+    <div>
+        <a href="DesignDoc.pdf" download>Click here to download our Design Document</a>
+    </div>
 
     <script src="../../index.js"></script>
 </body>

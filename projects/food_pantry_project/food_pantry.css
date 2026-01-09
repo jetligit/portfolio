@@ -48,6 +48,10 @@ h1.phase {
     font-size: 32px;
 }
 
+h1.sprintthree {
+    margin-bottom: 10px;
+}
+
 h2 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -58,6 +62,14 @@ h2.process {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
+}
+
+h2.user {
+    margin-top: 20px;
+    font-size: 27px;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    color:rgb(32, 23, 132);
 }
 
 .er {
@@ -81,6 +93,8 @@ h2.process {
     height: auto;
     border: 2px solid black;
 }
+
+
 
 p{
     font-size: 18px;
@@ -119,20 +133,20 @@ p.erp{
 
 p.top-skills{
     font-size:22px;
-    text-indent: 11em;
+    text-indent: 18em;
     margin-bottom: 5px; 
 }
 
 p.top-apps{
     font-size:22px;
-    text-indent: 3em;
+    text-indent: 0em;
     text-align: right;
     margin-bottom: 5px; 
 }
 
 p.bot-skills{
     font-size:18px;
-    text-indent: 11em;
+    text-indent: 8em;
     margin-bottom: 10px; 
 }
 
@@ -143,10 +157,24 @@ p.bot-apps{
     margin-bottom: 10px; 
 }
 
-.skills-apps {
+p.sprintthree_login{
+    text-align: center;
+    width: 700px;
+}
+
+
+
+
+.top-skills-apps {
     display: flex;
     gap: 700px;
     margin-bottom: 0px;
+}
+
+.bot-skills-apps {
+    display:flex;
+    gap: 350px;
+    margin-bottom: 20px;
 }
 
 a{
@@ -158,11 +186,18 @@ a{
 .pages {
     display: flex;
     justify-content: center;
-    gap: 30px; /* controls space between the two images */
+    gap: 20px; /* controls space between the two images */
     margin-bottom: 10px;
 }
 
 .page-card {
+    width: 725px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers image + label */
+}
+
+.user-page-card {
     display: flex;
     flex-direction: column;
     align-items: center; /* centers image + label */
@@ -172,7 +207,58 @@ a{
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    color:rgb(32, 23, 132);
 }
+.page-card p.sprinttwo_admin {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.page-card p.sprinttwo_user {
+    margin-left: 8px;
+    text-align: center;
+}
+
+.page-card p.sprintthree_admin {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.img_txt { 
+    display: flex; flex-direction: column;
+    margin-bottom: 20px;
+ }
+
+.img-text-row {
+    display: flex;
+    align-items: flex-start; /* aligns top of image + text */
+    gap: 20px;
+}
+
+.spt3_user {
+    width: 700px; /* or whatever looks good */
+    height: auto;
+    border: 2px solid black;
+}
+
+.sprintthree_user {
+    max-width: 500px;
+    text-align: left;
+}
+
+.spt3_summary{
+    width: 700px;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+a {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
 
 
 
