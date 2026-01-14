@@ -12,13 +12,46 @@
         <button onclick="goToPage('/about/about.html')"> About </button> 
         <button onclick="goToPage('/projects/projects.html')"> Projects </button> 
         <button onclick="goToPage('/contact/contact.html')"> Contact </button>
-        <!-- Contact will have email, phone number, and linked in link -->
     </div>
     <div class = "project"> 
-        <img src="linkedin_pfp.jpeg" alt="Profile Picture">
-        <p> Hello. My name is Jet Li. I grew up in New York City. I am currently a third year student at Rochester Institute of Technology pursuing a Bachelors degree
-            in Computer Science. I am seeking a backend, frontend, or full-stack software engineering co-op. </p>
+        <img class = "pfp" src="linkedin_pfp.jpeg" alt="Profile Picture">
+        <p> Hello! My name is Jet Li. I grew up in New York City. I am currently a third year student at Rochester Institute of Technology pursuing a Bachelors degree
+            in Computer Science. I am seeking a backend, frontend, or full-stack software engineering co-op or internship. </p>
     </div>
+
+    <h1 class="projects">Projects</h1>
+    <div class = "project-box"> 
+        <button class = "project-btn" data-link="projects/data_games_project/game_database.html">
+            Video Game Database
+        </button>
+        
+        <button class = "project-btn" data-link="projects/image_project/image_app.html">
+            Image Locator App
+        </button>
+        
+        <button class = "project-btn" data-link="projects/food_pantry_project/food_pantry.html">
+            Food Pantry App
+        </button>
+    </div>
+
+    <h1 class="skills">Skills</h1>
+    <div class = "skills-box"> 
+        <button> Java </button>
+        <button> Python </button>
+        <button> C </button>
+        <button> SQL </button>
+    </div>
+
+    <div class = "skills-box"> 
+        <button> AngularJS </button>
+        <button> Javascript </button>
+        <button> HTML</button>
+        <button> CSS </button>
+        <button> Git </button>
+    </div>
+    
+
+
     
     <script src = "index.js"> </script>
 </body>
