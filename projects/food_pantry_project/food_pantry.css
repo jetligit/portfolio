@@ -257,6 +257,45 @@ a {
     margin-bottom: 20px;
 }
 
+/* Sprint sections */
+.sprint {
+    display: flex;
+    flex-wrap: wrap;      /* allows stacking on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sprint-card {
+    flex: 1 1 400px;     /* responsive width */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sprint-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sprint-card h2 {
+    font-family: 'Inter', sans-serif;
+    color: rgb(32, 23, 132);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.sprint-card p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
 
 
 
