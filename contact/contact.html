@@ -13,10 +13,29 @@
     <script>
         createHeader("header-container");
     </script>
-    <p>Phone Number: 646-340-7501</p>
-    <p>email: jet.li2@outlook.com</p>
-    <p> Linked In: </p>
-    <a href="https://www.linkedin.com/in/jet-li3" target="_blank">https://www.linkedin.com/in/jet-li3</a>
-    <script src = "../index.js"> </script>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+
+        <div class="contact-card">
+            <p><strong>📞 Phone:</strong> 646-340-7501</p>
+            <p><strong>📧 Email:</strong> jet.li2@outlook.com</p>
+            <p><strong>💼 LinkedIn: <a href="https://www.linkedin.com/in/jet-li3" target="_blank"> View Profile </a></strong></p>
+
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message..." rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+</div>
+
+<script src="../index.js"></script>
 </body>
 </html>
