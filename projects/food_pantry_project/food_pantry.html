@@ -13,8 +13,10 @@
     <script>
         createHeader("header-container");
     </script>
+    <script src="../../lightbox.js"></script>
 
     <div class="fp-container">
+
         <div class="fp-header">
             <div class="fp-header-spacer"></div>
             <h1 class="fp-title">Food Pantry Application</h1>
@@ -85,6 +87,13 @@
 
     </div>
 
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+
     <script src="../../index.js"></script>
+    <script src="lightbox.js"></script>
 </body>
 </html>

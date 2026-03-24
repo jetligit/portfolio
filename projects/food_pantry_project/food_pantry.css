@@ -77,6 +77,13 @@ p.summary {
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fp-row:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
 }
 
 .fp-row-reverse {
@@ -137,8 +144,9 @@ a {
     border-radius: 8px;
     font-size: 16px;
     text-decoration: none;
-    margin: 10px auto 40px;
     transition: background-color 0.2s ease;
+    margin-top: 12px;
+    margin-right: 0px;
 }
 
 .download-btn:hover {
@@ -163,4 +171,39 @@ a {
     align-items: flex-end;
     padding-right: 20px;
     padding-top: 10px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
 }
