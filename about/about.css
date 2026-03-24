@@ -1,6 +1,20 @@
-p {
-    text-indent: 50px;
-    font-size: 18px;
+.bio {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: var(--muted);
+    max-width: 620px;
+    margin: 0.5rem auto 3rem auto;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+}
+
+.about-heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+    color: var(--ink);
 }
 
 .bullet{
@@ -15,4 +29,188 @@ h3{
 .home-button {
     display: flex;
     justify-content: flex-end;
+}
+
+:root {
+    --bg: #f5f3ee;
+    --ink: #1a1814;
+    --muted: #7a756c;
+    --accent: #c94b2e;
+    --line: #d9d4cb;
+    --card-bg: #ffffff;
+    --tag-bg: #eae8e3;
+}
+
+.exp-heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.exp-heading em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.exp-subhead {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 0;
+    width: 1px;
+    background: var(--line);
+}
+
+.timeline-entry {
+    position: relative;
+    padding-left: 2.2rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeUp 0.5s ease forwards;
+}
+
+.timeline-entry:nth-child(1) { animation-delay: 0.05s; }
+.timeline-entry:nth-child(2) { animation-delay: 0.15s; }
+.timeline-entry:nth-child(3) { animation-delay: 0.25s; }
+.timeline-entry:nth-child(4) { animation-delay: 0.35s; }
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+    transition: transform 0.2s ease;
+}
+
+.timeline-entry:hover::before {
+    transform: scale(1.5);
+}
+
+.exp-card {
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1.4rem 1.6rem 1.5rem;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.timeline-entry:hover .exp-card {
+    box-shadow: 4px 4px 0px var(--accent);
+    transform: translate(-2px, -2px);
+}
+
+.exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.exp-company {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+}
+
+.exp-period {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.exp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.exp-role {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.exp-location {
+    font-size: 0.7rem;
+    color: var(--muted);
+}
+
+.exp-location::before {
+    content: '·';
+    margin-right: 0.4rem;
+}
+
+.exp-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.exp-bullets li {
+    font-size: 0.78rem;
+    line-height: 1.65;
+    color: #3d3a35;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.exp-bullets li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--line);
+}
+
+.tag {
+    background: var(--tag-bg);
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 2px;
 }

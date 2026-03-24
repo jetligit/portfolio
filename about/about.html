@@ -6,6 +6,9 @@
     <title>About Me</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>  
     <div id="header-container"></div>
@@ -14,10 +17,114 @@
             createHeader("header-container");
     </script>
     
-    <h1> About Me </h1>
-    <p> Hello. My name is Jet Li. I grew up in New York City. I am currently a third year student at Rochester Institute of Technology pursuing a Bachelors degree
-        in Computer Science. I am seeking a backend, frontend, or full-stack software engineering co-op. 
+    <h1 class="about-heading">About Me</h1>
+    <p class="bio">
+        Hello. My name is Jet Li. I grew up in New York City. I am currently a third year student at 
+        Rochester Institute of Technology pursuing a Bachelor's degree in Computer Science. 
+        I am seeking a backend, frontend, or full-stack software engineering co-op.
     </p>
+
+    <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+        <h2 class="exp-heading">Work <em>Experience</em></h2>
+        <p class="exp-subhead">Internships &amp; Roles</p>
+    
+        <div class="timeline">
+    
+            <!-- Entry 1 -->
+            <div class="timeline-entry">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">Graviton Consulting Services</span>
+                        <span class="exp-period">Feb 2026 – Current</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-role">Software Engineering Intern</span>
+                        <span class="exp-location">Remote</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed data integration pipelines in Oracle Integration Cloud using SQL-based transformations to sync enterprise data across systems</li>
+                        <li>Built and deployed 2 LLM-powered AI agents to automate payroll processing and benefits analysis, integrating with enterprise HR/ERP data sources</li>
+                        <li>Designed structured reasoning workflows and tool-use pipelines in Oracle AI Agent Studio for reliable, multi-step data analysis</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">Oracle Integration Cloud</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">LLM Agents</span>
+                        <span class="tag">AI Agent Studio</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Entry 2 -->
+            <div class="timeline-entry">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">Leap Prep</span>
+                        <span class="exp-period">Jan 2026 – Feb 2026</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-role">Software Engineering Intern</span>
+                        <span class="exp-location">New York, NY</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Improved website maintainability by updating frontend components with React and Next.js in a Docker-based environment</li>
+                        <li>Refactored Supabase database schema to better separate concerns using normalized tables and relationships</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Entry 3 -->
+            <div class="timeline-entry">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">IC Learning Center</span>
+                        <span class="exp-period">Jul 2024 – Aug 2024</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-role">Teaching Assistant</span>
+                        <span class="exp-location">New York, NY</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Guided an average of 10 students weekly in math and English, boosting engagement in classroom discussions</li>
+                        <li>Led a class of 20 students in chess fundamentals to strengthen critical thinking skills</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">Teaching</span>
+                        <span class="tag">Mentorship</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Entry 4 -->
+            <div class="timeline-entry">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">Changing the Present</span>
+                        <span class="exp-period">Jul 2021 – Aug 2021</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-role">Data Analyst</span>
+                        <span class="exp-location">New York, NY</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Sourced and analyzed data on 200+ student organizations to inform targeted marketing strategies</li>
+                        <li>Synthesized outreach data to refine marketing efforts, increasing response rates by 8%</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Marketing</span>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
     <p> resume </p>
 
     <script src = "../index.js"> </script>

@@ -1,40 +1,28 @@
-.home-button {
-    position: absolute;
-    right: 20px;   
-    height: 30px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.button-box {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.button-box button {
-    height: 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.button-box button:hover {
-    color: rgb(106, 197, 227);
-}
-
 html, body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 35px;
+.top {
+    display: flex;
+    flex-direction: column;
+    background-color: #87CEEB;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
 }
 
 h1.title {
@@ -50,6 +38,13 @@ h1.phase {
 
 h1.sprintthree {
     margin-bottom: 10px;
+}
+
+h1.phase {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
 
 h2 {
@@ -93,7 +88,6 @@ h2.user {
     height: auto;
     border: 2px solid black;
 }
-
 
 
 p{
