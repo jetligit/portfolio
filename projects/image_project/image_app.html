@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Game Database Project</title>
+    <title>Image App Project</title>
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="stylesheet" href="image_app.css">
 </head>
@@ -14,46 +14,65 @@
         createHeader("header-container");
     </script>
 
-    <p class = "summary"> 
-        This was a personal project I decided to do because I gained the skills necessary to make a full stack application and I thought
-        it would be cool to have an app that tells you all of the places you have been. I then came up with the idea to use the EXIF
-        metadata from uploaded images and Google Maps API to display markers at the locations in which the pictures were taken. This way, 
-        users can visualize all of the locations they have been to look back on and perhaps even to return to. 
-    </p>
+    <script src="../../../lightbox.js"></script>
 
-    <div class = "top-skills-apps">
-        <p class = "top-skills"> Skills used: </p>
-        <p class = "top-apps"> Apps used: 
+    <div class="fp-container">
+
+        <div class="fp-header">
+            <div class="fp-header-spacer"></div>
+            <h1 class="fp-title">Image Location App</h1>
+            <div class="fp-header-right"></div>
+        </div>
+
+        <p class="summary">
+            A personal full stack application that uses EXIF metadata from uploaded images and the Google Maps API 
+            to display markers at the locations where pictures were taken. Users can visualize all the places 
+            they have been to look back on or perhaps return to.
+        </p>
+
+        <div class="meta-row">
+            <div class="meta-block">
+                <span class="meta-label">Skills</span>
+                <span class="meta-value">Angular, Java, Google Maps API, Github, HTML, CSS</span>
+            </div>
+            <div class="meta-block">
+                <span class="meta-label">Tools</span>
+                <span class="meta-value">Visual Studio Code</span>
+            </div>
+        </div>
+
+        <!-- Part One -->
+        <div class="fp-row">
+            <img class="fp-img" src="images/nor_man.png" alt="Norway and Manhattan markers">
+            <div class="fp-text">
+                <h2>Part One: Basic Functionality</h2>
+                <p>I imported the Google Maps API and built an image upload button. Images are sent to the 
+                backend where EXIF metadata is extracted, and GPS coordinates are returned to the frontend 
+                to display markers. The image shows markers for a photo from New York City's Korea Town and 
+                one from a vacation in Norway.</p>
+            </div>
+        </div>
+
+        <!-- Part Two -->
+        <div class="fp-row fp-row-reverse">
+            <img class="fp-img" src="images/date.png" alt="Date Display with Manhattan Marker">
+            <div class="fp-text">
+                <h2>Part Two: Enhanced Features</h2>
+                <p>With basic functionality complete, I added a clear button to remove all displayed markers. 
+                I also added an info window that appears when a marker is clicked, showing the date the 
+                picture was taken.</p>
+            </div>
+        </div>
+
     </div>
-    <div class = "bot-skills-apps">
-        <p class = "bot-skills">Angular, Java, Google Maps API, Github, HTML, CSS</p>
-        <p class = "bot-apps"> Visual Studio Code </p>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
     </div>
 
-    <h1 class = "phase" > Part One: </h1>
-    <div>
-        <img class = "nor_man" src = "images/nor_man.png" alt = "Norway and Manhattan markers">
-    </div>    
-    <p class = "er_diagram"> 
-        In the first part of the project, I worked on basic functionality for the project. I first imported Google Maps API and then
-        made an input button to upload images. I sent the images' data to the backend, extracted the EXIF metadata, and then 
-        sent the GPS coordinates back to the frontend so the markers can be displayed. I uploaded two images, one from New York City's
-        Korea Town and one from my parents' vacation in Norway, and in the image above, the markers are displayed in the corresponding
-        locations. 
-    </p>
-
-
-    <h1 class = "phase" > Part Two: </h1>
-    <div>
-        <img class = "date" src = "images/date.png" alt = "Date Display with Manhattan Marker">
-    </div>
-    <p class = "er_diagram"> 
-        In the second part of the project, since the basic functionalities were finished, I thought about adding extra functionalities
-        that would enhance the user experience. I decided to add a clear button to delete all of the markers that are currently displayed.
-        In addition, I added an info window that displays when each marker is clicked, and shows the date in which the picture was
-        taken. 
-    </p>
-
-    <script src="../../index.js"></script>
+    <script src="../../../index.js"></script>
+    <script src="lightbox.js"></script>
 </body>
 </html>
