@@ -39,45 +39,67 @@
     <h1 class="skills">Skills</h1>
     <div class="skills-container">
     
-        <div class="skill-group">
-            <h3>Programming Languages</h3>
-            <div class="skills-box">
-                <span>Java</span>
-                <span>Python</span>
-                <span>C</span>
-                <span>SQL</span>
+        <div class="skill-flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="skill-flip-inner">
+                <div class="skill-flip-front">
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skill-flip-back">
+                    <ul>
+                        <li><span>Java</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>Python</span><span class="badge intermediate">Intermediate</span></li>
+                        <li><span>C</span><span class="badge intermediate">Intermediate</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-        <div class="skill-group">
-            <h3>Frontend</h3>
-            <div class="skills-box">
-                <span>AngularJS</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
+        
+        <div class="skill-flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="skill-flip-inner">
+                <div class="skill-flip-front">
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skill-flip-back">
+                    <ul>
+                        <li><span>AngularJS</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>JavaScript</span><span class="badge intermediate">Intermediate</span></li>
+                        <li><span>TypeScript</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>HTML</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>CSS</span><span class="badge advanced">Advanced</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-        <div class="skill-group">
-            <h3>Backend</h3>
-            <div class="skills-box">
-                <span>Spring</span>
-                <span>REST APIs</span>
+        
+        <div class="skill-flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="skill-flip-inner">
+                <div class="skill-flip-front">
+                    <h3>Backend</h3>
+                </div>
+                <div class="skill-flip-back">
+                    <ul>
+                        <li><span>Spring</span><span class="badge intermediate">Intermediate</span></li>
+                        <li><span>REST APIs</span><span class="badge intermediate">Intermediate</span></li>
+                        <li><span>SQL</span><span class="badge intermediate">Intermediate</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-        <div class="skill-group">
-            <h3>General</h3>
-            <div class="skills-box">
-                <span>GitHub</span>
-                <span>Data Structures</span>
-                <span>SDLC</span>
+        
+        <div class="skill-flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="skill-flip-inner">
+                <div class="skill-flip-front">
+                    <h3>General</h3>
+                </div>
+                <div class="skill-flip-back">
+                    <ul>
+                        <li><span>GitHub</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>Data Structures</span><span class="badge advanced">Advanced</span></li>
+                        <li><span>SDLC</span><span class="badge intermediate">Intermediate</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-    </div>
     
     <script src = "index.js"> </script>
 </body>
