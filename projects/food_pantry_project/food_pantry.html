@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Game Database Project</title>
+    <title>Food Pantry Project</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="food_pantry.css">
-
 </head>
 <body>
     <div id="header-container"></div>
@@ -15,90 +14,75 @@
         createHeader("header-container");
     </script>
 
-    <p class = "summary"> 
-        This was a project done in a team of four. This is a full stack application that models a food pantry with users and an admin.
-        The following images and details will show how our application has developed over  sprints. 
-    </p>
+    <div class="fp-container">
+        <div class="fp-header">
+            <div class="fp-header-spacer"></div>
+            <h1 class="fp-title">Food Pantry Application</h1>
+            <div class="fp-header-right">
+                <a class="download-btn" href="DesignDoc.pdf" download>⬇ Download Design Document</a>
+            </div>
+        </div>
 
-    <div class = "top-skills-apps">
-        <p class = "top-skills"> Skills used: </p>
-        <p class = "top-apps"> Apps used: 
-    </div>
-    <div class = "bot-skills-apps">
-        <p class = "bot-skills">Java, Angular, HTML, CSS, Agile Methodologies, Code Coverage, Code review, Unit Testing  </p>
-        <p class = "bot-apps"> Visual Studio Code </p>
-    </div>
-
-    <h1 class = "phase" > Sprint One: </h1>
-    <div>
-        <img class = "er" src = "Sprint1/domain_analysis.png" alt = "Domain Analysis Diagram">
-    </div>    
-    <p class = "sprintone"> 
-        We first had to make a plan for the project. We designed a Domain Analysis Diagram to set up the logic behind our application.
-        When that was completed, we started working on the backend of our project. We wrote the functions for an admin to be able to 
-        add, delete, or update food items in the inventory. We then tested these functions using curl commands. 
-    </p>
-
-
-<!-- Sprint Two -->
-<h1 class="phase">Sprint Two:</h1>
-<div class="sprint">
-    <div class="sprint-card">
-        <h2>Admin Page</h2>
-        <img src="Sprint2/sprint2_admin.png" alt="Sprint 2 Admin Page">
-        <p>
-            In this sprint, we started working on the user interface and continued creating functionality. 
-            We first made a basic login page that sends the user into the admin page or their own user page. 
-            Then, we made an admin page with add, delete, and update buttons to change the inventory.
+        <!-- Summary -->
+        <p class="summary">
+            This was a project done in a team of four. This is a full stack application that models a food pantry 
+            with users and an admin. Users can browse inventory, add items to a basket, check out, and contribute 
+            to a donation bank. Admins can add, delete, and update food items in the inventory.
         </p>
-    </div>
 
-    <div class="sprint-card">
-        <h2>User Page</h2>
-        <img src="Sprint2/sprint2_user.png" alt="Sprint 2 User Page">
-        <p>
-            Next, we created a user page where the food items are displayed. We then created buttons for the user 
-            to add or delete food items from their basket. We also created a search bar to enable the user to search 
-            for food items by name.
-        </p>
-    </div>
-</div>
+        <!-- Skills & Tools -->
+        <div class="meta-row">
+            <div class="meta-block">
+                <span class="meta-label">Skills</span>
+                <span class="meta-value">Java, Angular, HTML, CSS, Agile, Code Coverage, Unit Testing</span>
+            </div>
+            <div class="meta-block">
+                <span class="meta-label">Tools</span>
+                <span class="meta-value">Visual Studio Code</span>
+            </div>
+        </div>
 
-<!-- Sprint Three -->
-<h1 class="phase">Sprint Three:</h1>
-<div class="sprint">
-    <div class="sprint-card">
-        <h2>Login Page</h2>
-        <img src="Sprint3/sprint3_login.png" alt="Sprint 3 Login Page">
-        <p>
-            In this sprint, we finished up our project. We finished implementing our final functionalities and 
-            improved our user interface. We added vibrant colors and changed button sizing.
-        </p>
-    </div>
+        <!-- Domain Analysis -->
+        <div class="fp-row">
+            <img class="fp-img" src="Sprint1/domain_analysis.png" alt="Domain Analysis Diagram">
+            <div class="fp-text">
+                <h2>Domain Analysis</h2>
+                <p>We began by designing a Domain Analysis Diagram to map out the logic and structure of the 
+                application before writing any code. This guided our backend design and data flow between 
+                the admin, users, and inventory system.</p>
+            </div>
+        </div>
 
-    <div class="sprint-card">
-        <h2>Admin Page</h2>
-        <img src="Sprint3/sprint3_admin.png" alt="Sprint 3 Admin Page">
-        <p>
-            In our admin page, we improved the user interface and kept the functionalities the same.
-        </p>
-    </div>
+        <!-- Login Page -->
+        <div class="fp-row fp-row-reverse">
+            <img class="fp-img" src="Sprint3/sprint3_login.png" alt="Login Page">
+            <div class="fp-text">
+                <h2>Login Page</h2>
+                <p>Users and admins log in through a shared login page that routes them to their respective 
+                dashboards based on their role.</p>
+            </div>
+        </div>
 
-    <div class="sprint-card">
-        <h2>User Page</h2>
-        <img src="Sprint3/sprint3_user.png" alt="Sprint 3 User Page">
-        <p>
-            In our user page, we added a checkout button which lets the user check out their items, removing them 
-            from the basket and inventory. We also implemented a donation bank and a total contribution ranking system, 
-            displaying the top three contributors on every user page.
-        </p>
-    </div>
-</div>
+        <!-- Admin Page -->
+        <div class="fp-row">
+            <img class="fp-img" src="Sprint3/sprint3_admin.png" alt="Admin Page">
+            <div class="fp-text">
+                <h2>Admin Page</h2>
+                <p>Admins can add, delete, and update food items in the inventory through a dedicated 
+                management interface with full control over the pantry stock.</p>
+            </div>
+        </div>
 
-    
+        <!-- User Page -->
+        <div class="fp-row fp-row-reverse">
+            <img class="fp-img" src="Sprint3/sprint3_user.png" alt="User Page">
+            <div class="fp-text">
+                <h2>User Page</h2>
+                <p>Users can browse the inventory, add items to their basket, and check out. A donation bank 
+                and live leaderboard displays the top three contributors on every user page.</p>
+            </div>
+        </div>
 
-    <div>
-        <a href="DesignDoc.pdf" download>Click here to download our Design Document</a>
     </div>
 
     <script src="../../index.js"></script>
