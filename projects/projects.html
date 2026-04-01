@@ -3,86 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <div class="top">
-        <div class="left"></div>   
-        <h1>Projects</h1>
-        <button class="home-button" onclick="goToPage('../index.html')">Home Page</button>
-    </div>
-
-    <div id="nav-container"></div>
-    <script src="/navbar.js"></script>
+    <div id="header-container"></div>
+    <script src="../navbar.js"></script>
     <script>
-        createNavbar("nav-container");
+        createHeader("header-container");
     </script>
-    
 
-    
-    <div class="individual">
-        <p> Video Game Database Application </p>
-    </div>
-    <div class="project">
-        <ul>
-            <li>Worked in a team of four to design and implement a PostgreSQL-backed command-line application for managing users, video games, ratings, and playtime data.</li>
-            <li>Built features for secure user authentication with encryption, game search/filtering, personalized recommendations, and collection management using Java and SQL.</li>
-            <li>Conducted data analysis and discovered that players engage with horror games 24.6% less in winter/spring than in summer/fall.</li>
-        </ul>
-        <div class="poster">
-            <img src="data_games_project/images/data_poster.png" alt="Video Game Data Analysis Poster">
+    <div class="projects-header">
+        <div class="projects-header-spacer"></div>
+        <h1 class="projects-title">Projects</h1>
+        <div class="projects-header-right">
+            <a class="github-btn" href="https://github.com/jetligit" target="_blank">GitHub</a>
         </div>
     </div>
-    <button onclick="goToPage('data_games_project/game_database.html')"> Click to find out more  </button>
 
-    <h3> Image Locator Application </h3>
-    <div class="project">
-        <ul>
-            <li>Developed a full-stack web application using Angular, TypeScript, Java, and Google Maps API</li>
-            <li>Implemented image upload handling, EXIF metadata extraction, and dynamic map rendering</li>
-            <li>Enabled users to visualize where their photos were taken in real time via interactive map markers
-            </li>
-        </ul>
-    </div>
-    <button onclick="goToPage('image_project/image_app.html')"> Click to find out more  </button>
-    
-    <h3> Food Pantry Team Project </h3>
-    <div class = "project">
-        <ul>
-            <li>Collaborated in a team of 4 to build a full-stack food pantry application using Angular and Java</li>
-            <li>Built core features such as secure login, a shopping cart, and inventory management, and implemented a responsive user interface with role-based pages and interactive item controls.</li>
-            <li>Followed Agile practices with sprint planning, SCRUM meetings, and JUnit testing</li>
-        </ul>
-    </div>
-    <button onclick="goToPage('food_pantry_project/food_pantry.html')"> Click to find out more  </button>
+    <div class="project-box">
 
-    <h3> Income Predictor Model </h3>
-    <div class = "project">
-        <ul>
-            <li>Developed a Python-based model to predict income from age data using polynomial regression, with linear regression as a baseline</li>
-            <li>Implemented and evaluated models, achieving an R² score 10× higher with polynomial regression</li>
-            <li>Applied data preprocessing, feature scaling, and visualization techniques using Matplotlib to analyze non-linear relationships between variables</li>
-        </ul>
-    </div>
+        <div class="project-card" onclick="goToPage('data_games_project/game_database.html')">
+            <h2>Video Game Database</h2>
+            <p>A PostgreSQL-backed CLI app for managing video games, users, ratings, and personalized recommendations.</p>
+        </div>
 
-    <h3> Wikipedia Language Classifier </h3>
-    <div class = "project">
-        <ul>
-            <li>Developed a natural language processing (NLP) classifier in Java using decision trees and an AdaBoost ensemble of decision stumps to distinguish 15-word Wikipedia text segments as English or Dutch</li>
-            <li>Applied supervised machine learning techniques, including ensemble methods and text classification, achieving 93.9% prediction accuracy</li>
-        </ul>
+        <div class="project-card" onclick="goToPage('image_project/image_app.html')">
+            <h2>Image Locator App</h2>
+            <p>Full-stack app that extracts EXIF metadata from images and displays photo locations on Google Maps.</p>
+        </div>
+
+        <div class="project-card" onclick="goToPage('food_pantry_project/food_pantry.html')">
+            <h2>Food Pantry App</h2>
+            <p>Full-stack food pantry app with role-based access, shopping cart, inventory management, and a donor leaderboard.</p>
+        </div>
+
+        <div class="project-card no-link">
+            <h2>Income Predictor</h2>
+            <p>Python model predicting income from age using polynomial regression, achieving 10× higher R² than linear baseline.</p>
+        </div>
+
+        <div class="project-card no-link">
+            <h2>Wikipedia Classifier</h2>
+            <p>NLP classifier in Java using decision trees and AdaBoost to distinguish English vs Dutch text with 93.9% accuracy.</p>
+        </div>
+
+        <div class="project-card no-link">
+            <h2>Terrain Pathfinder</h2>
+            <p>A*-based pathfinding system computing optimal routes across real-world terrain using elevation and satellite map data.</p>
+        </div>
+
     </div>
 
-    <h3> Terrain Aware Pathfinder </h3>
-    <div class = "project">
-        <p>
-            Developed an A*-based pathfinding system that computes the optimal route across real-world terrain using satellite map colors, elevation data, and terrain-dependent movement costs. The program parses a
-            395x500 terrain image, elevation grid, and control-point file to determine the fastest traversal path and overlays the result on the original map. Implements efficient graph search with heuristics, custom cost functions, and pixel-level geospatial calculations.
-        </p>
-    </div>
-
-    <script src = "../index.js"> </script>
+    <script src="../index.js"></script>
 </body>
 </html>
-

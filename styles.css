@@ -90,103 +90,62 @@ p {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Flip Cards */
-.skills-container {
+.tag-cloud {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    gap: 24px;
-    max-width: 900px;
-    margin: 20px auto 60px;
+    max-width: 700px;
+    margin: 20px auto 16px;
+    padding: 0 20px;
 }
 
-.skill-flip-card {
-    width: 200px;
-    height: 220px;
-    perspective: 1000px;
-    cursor: pointer;
-}
-
-.skill-flip-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease;
-}
-
-.skill-flip-card.flipped .skill-flip-inner {
-    transform: rotateY(180deg);
-}
-
-.skill-flip-card:hover {
-    transform: translateY(-8px);
-    transition: transform 0.3s ease;
-}
-
-.skill-flip-front,
-.skill-flip-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.skill-flip-front {
-    background: #87CEEB;
-}
-
-.skill-flip-front h3 {
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-}
-
-.skill-flip-back {
-    background: #f5f5f5;
-    transform: rotateY(180deg);
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.skill-flip-back ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.skill-flip-back ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    color: #333;
-}
-
-.badge {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 20px;
+.tag {
+    padding: 8px 18px;
+    border-radius: 999px;
     font-weight: 500;
+    cursor: default;
+    border: 0.5px solid;
 }
 
-.badge.advanced {
-    background: #87CEEB;
-    color: #fff;
+.tag.advanced {
+    font-size: 18px;
+    background: #B5D4F4;
+    color: #0C447C;
+    border-color: #378ADD;
 }
 
-.badge.intermediate {
-    background: #e0e0e0;
-    color: #555;
+.tag.intermediate {
+    font-size: 15px;
+    background: #D3D1C7;
+    color: #444441;
+    border-color: #888780;
 }
+
+.tag.beginner {
+    font-size: 12px;
+    background: #F1EFE8;
+    color: #5F5E5A;
+    border-color: #B4B2A9;
+}
+
+.tag-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.legend-dot.advanced { background: #378ADD; }
+.legend-dot.intermediate { background: #888780; }
+.legend-dot.beginner { background: #B4B2A9; }

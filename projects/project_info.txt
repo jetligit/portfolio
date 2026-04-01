@@ -1,0 +1,24 @@
+<h3> Income Predictor Model </h3>
+    <div class = "project">
+        <ul>
+            <li>Developed a Python-based model to predict income from age data using polynomial regression, with linear regression as a baseline</li>
+            <li>Implemented and evaluated models, achieving an R² score 10× higher with polynomial regression</li>
+            <li>Applied data preprocessing, feature scaling, and visualization techniques using Matplotlib to analyze non-linear relationships between variables</li>
+        </ul>
+    </div>
+
+    <h3> Wikipedia Language Classifier </h3>
+    <div class = "project">
+        <ul>
+            <li>Developed a natural language processing (NLP) classifier in Java using decision trees and an AdaBoost ensemble of decision stumps to distinguish 15-word Wikipedia text segments as English or Dutch</li>
+            <li>Applied supervised machine learning techniques, including ensemble methods and text classification, achieving 93.9% prediction accuracy</li>
+        </ul>
+    </div>
+
+    <h3> Terrain Aware Pathfinder </h3>
+    <div class = "project">
+        <p>
+            Developed an A*-based pathfinding system that computes the optimal route across real-world terrain using satellite map colors, elevation data, and terrain-dependent movement costs. The program parses a
+            395x500 terrain image, elevation grid, and control-point file to determine the fastest traversal path and overlays the result on the original map. Implements efficient graph search with heuristics, custom cost functions, and pixel-level geospatial calculations.
+        </p>
+    </div>

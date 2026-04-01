@@ -26,9 +26,51 @@ h3{
     margin-bottom: 0;
 }
 
-.home-button {
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem 0;
+}
+
+.about-header-spacer {
+    flex: 1;
+}
+
+.about-header-right {
+    flex: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+.resume-section {
+    text-align: center;
+    margin: 2rem 0 4rem;
+}
+
+.resume-top-right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem 0;
+}
+
+.resume-btn {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--card-bg);
+    background: var(--accent);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
 
 :root {
@@ -181,11 +223,12 @@ h3{
 }
 
 .exp-bullets li {
-    font-size: 0.78rem;
+    font-size: 0.90rem;
     line-height: 1.65;
     color: #3d3a35;
     padding-left: 1rem;
     position: relative;
+    text-align: left;
 }
 
 .exp-bullets li::before {
