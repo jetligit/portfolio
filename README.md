@@ -1,0 +1,1 @@
+This is my personal portfolio website, built with JavaScript, HTML, and CSS. It showcases my projects, highlights my work experience, and provides information on how to contact me. It also gives a glimpse into who I am and what I value as a developer.
