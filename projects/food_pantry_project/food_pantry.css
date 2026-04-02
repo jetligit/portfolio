@@ -153,26 +153,6 @@ a {
     background-color: #5bb8e0;
 }
 
-.fp-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-}
-
-.fp-header-spacer {
-    flex: 1;
-}
-
-.fp-header-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 20px;
-    padding-top: 10px;
-}
-
 .lightbox {
     display: none;
     position: fixed;

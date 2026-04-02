@@ -28,7 +28,7 @@ nav ul {
 .fp-title {
     text-align: center;
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .fp-header {
@@ -61,6 +61,7 @@ p.summary {
     text-align: center;
     line-height: 1.6;
     margin: 20px auto 10px;
+    margin-top: 0px;
     max-width: 800px;
 }
 

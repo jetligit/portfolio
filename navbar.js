@@ -4,7 +4,7 @@ function createHeader(containerId){
 
     container.innerHTML = `
         <div class="top">
-            <h1>Welcome to Jet's Portfolio</h1>
+            <h1 class = "nav-title">Welcome to Jet's Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
