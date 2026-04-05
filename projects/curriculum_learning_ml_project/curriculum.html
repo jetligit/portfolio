@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Learning Project</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="curriculum.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <script src="../../navbar.js"></script>
+    <script>
+        createHeader("header-container");
+    </script>
+
+    <div class="cl-container">
+
+        <!-- Hero -->
+        <div class="cl-hero">
+            <div class="cl-hero-label">Research Project · Team of 4</div>
+            <h1 class="cl-title">Speeding Up NLP Training with Curriculum Learning</h1>
+            <p class="cl-subtitle">Can training deep learning models smarter — not longer — reduce loss and improve convergence?</p>
+            <div class="cl-meta-row">
+                <span class="cl-meta-pill">Python</span>
+                <span class="cl-meta-pill">PyTorch</span>
+                <span class="cl-meta-pill">Pandas</span>
+                <span class="cl-meta-pill">BERT-base</span>
+                <span class="cl-meta-pill">NLP</span>
+            </div>
+        </div>
+
+        <!-- Result callout -->
+        <div class="cl-callout">
+            <div class="cl-callout-stat">68%</div>
+            <div class="cl-callout-desc">reduction in training loss after 10 epochs using curriculum learning vs. baseline transformers</div>
+        </div>
+
+        <!-- Overview + Problem -->
+        <div class="cl-section-grid">
+            <div class="cl-card">
+                <h2 class="cl-card-heading">Overview</h2>
+                <p>We explored whether curriculum learning could improve training efficiency in transformer-based NLP models by progressively introducing harder examples and comparing convergence against a standard baseline.</p>
+            </div>
+            <div class="cl-card">
+                <h2 class="cl-card-heading">Problem Statement</h2>
+                <p>Training deep learning models for NLP is computationally expensive and often requires many epochs to converge.</p>
+                <p class="cl-question">Can curriculum learning accelerate convergence and reduce training loss compared to traditional training methods?</p>
+            </div>
+        </div>
+
+        <!-- Curriculum Strategy -->
+        <div class="cl-card cl-card-full">
+            <h2 class="cl-card-heading">Curriculum Strategy — Baby Steps</h2>
+            <p>We applied the Baby Steps method, where training data is introduced progressively based on difficulty. Difficulty was measured by text length — shorter samples were treated as easier, longer samples as more complex.</p>
+            <div class="cl-steps">
+                <div class="cl-step">
+                    <div class="cl-step-epoch">Epochs 1–3</div>
+                    <div class="cl-step-bar">
+                        <div class="cl-step-fill" style="width: 33%"></div>
+                    </div>
+                    <div class="cl-step-label">Easiest 33% of data</div>
+                </div>
+                <div class="cl-step">
+                    <div class="cl-step-epoch">Epochs 4–6</div>
+                    <div class="cl-step-bar">
+                        <div class="cl-step-fill" style="width: 66%"></div>
+                    </div>
+                    <div class="cl-step-label">Easiest 66% — easy + medium</div>
+                </div>
+                <div class="cl-step">
+                    <div class="cl-step-epoch">Epochs 7–10</div>
+                    <div class="cl-step-bar">
+                        <div class="cl-step-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="cl-step-label">Full dataset</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datasets -->
+        <div class="cl-card cl-card-full">
+            <h2 class="cl-card-heading">Datasets</h2>
+            <div class="cl-dataset-grid">
+                <div class="cl-dataset">
+                    <div class="cl-dataset-name">Yahoo Answers</div>
+                    <div class="cl-dataset-size">~1 GB</div>
+                    <p>Large corpus of real-world questions and answers. Question and answer fields were concatenated into a single input. Entries with fewer than 4 words were removed.</p>
+                </div>
+                <div class="cl-dataset">
+                    <div class="cl-dataset-name">Book Corpus</div>
+                    <div class="cl-dataset-size">~4 GB</div>
+                    <p>Long-form text used for language modeling. Provided a rich, varied source of complex linguistic patterns.</p>
+                </div>
+                <div class="cl-dataset">
+                    <div class="cl-dataset-name">Mock Dataset</div>
+                    <div class="cl-dataset-size">Small</div>
+                    <p>Smaller controlled dataset used for rapid experimentation and verifying pipeline correctness before scaling up.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="cl-card cl-card-full">
+            <h2 class="cl-card-heading">Results & Key Insights</h2>
+            <div class="cl-results-grid">
+                <div class="cl-result cl-result-positive">
+                    <div class="cl-result-icon">✓</div>
+                    <h3>What Worked</h3>
+                    <ul>
+                        <li>68% reduction in training loss after 10 epochs</li>
+                        <li>Outperformed baseline transformer models at the same training stage</li>
+                        <li>Curriculum learning improved early-stage convergence</li>
+                    </ul>
+                </div>
+                <div class="cl-result cl-result-neutral">
+                    <div class="cl-result-icon">→</div>
+                    <h3>Limitations</h3>
+                    <ul>
+                        <li>Training speed per epoch was similar or slightly worse than baseline</li>
+                        <li>Benefits constrained by smaller dataset sizes</li>
+                        <li>Only 10 training epochs — more would amplify gains</li>
+                        <li>Text length may not fully capture linguistic complexity</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <h2 class="cl-plots-heading">Convergence Plots</h2>
+            <div class="cl-plots">
+                <div class="cl-plot">
+                    <img src="images/mini_dataset.png" alt="Mini Dataset Convergence Plot">
+                    <p class="cl-plot-caption">Mini Dataset — Curriculum Learning vs Baseline (BERT)</p>
+                </div>
+                <div class="cl-plot">
+                    <img src="images/1mb_dataset.png" alt="1MB Dataset Convergence Plot">
+                    <p class="cl-plot-caption">1MB Dataset — Curriculum Learning vs Baseline (BERT)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Work -->
+        <div class="cl-card cl-card-full">
+            <h2 class="cl-card-heading">Future Work</h2>
+            <p>With larger datasets and longer training schedules, curriculum learning is expected to reduce required epochs, improve efficiency at scale, and enable more stable optimization. Future improvements could include:</p>
+            <div class="cl-future-grid">
+                <div class="cl-future-item">Advanced difficulty metrics such as semantic complexity or perplexity</div>
+                <div class="cl-future-item">Adaptive curriculum strategies instead of fixed epoch splits</div>
+                <div class="cl-future-item">Scaling to larger datasets and longer training runs</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../index.js"></script>
+</body>
+</html>

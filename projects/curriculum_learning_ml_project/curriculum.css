@@ -1,0 +1,352 @@
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    background-color: #87CEEB;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+}
+
+.cl-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.cl-container p {
+    text-indent: 0 !important;
+    text-align: left;
+}
+
+/* Hero */
+.cl-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cl-hero-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.cl-title {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0 0 16px;
+    color: #1a1814;
+    letter-spacing: -0.02em;
+}
+
+.cl-subtitle {
+    font-size: 1.05rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.cl-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.cl-meta-pill {
+    background: #87CEEB;
+    color: #0C447C;
+    font-size: 13px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.05em;
+}
+
+/* Callout */
+.cl-callout {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #1a1814;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 36px;
+    margin-bottom: 32px;
+}
+
+.cl-callout-stat {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #87CEEB;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.cl-callout-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d9d4cb;
+}
+
+/* Cards */
+.cl-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cl-card {
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 28px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.cl-card-full {
+    margin-bottom: 20px;
+}
+
+.cl-card-heading {
+    font-size: 20px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #87CEEB;
+    color: #1a1814;
+}
+
+.cl-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin: 0 0 10px;
+    text-indent: 0;
+    text-align: left;
+}
+
+.cl-card p:last-child {
+    margin-bottom: 0;
+}
+
+.cl-question {
+    font-style: italic;
+    color: #1a1814 !important;
+    font-size: 16px;
+    border-left: 3px solid #87CEEB;
+    padding-left: 12px;
+    margin-top: 12px !important;
+}
+
+/* Curriculum steps */
+.cl-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.cl-step {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    align-items: center;
+    gap: 16px;
+}
+
+.cl-step-epoch {
+    font-size: 15px;
+    font-family: 'Courier New', monospace;
+    color: #555;
+    text-align: right;
+}
+
+.cl-step-bar {
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.cl-step-fill {
+    height: 100%;
+    background: #87CEEB;
+    border-radius: 999px;
+    transition: width 1s ease;
+}
+
+.cl-step-label {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Datasets */
+.cl-dataset-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.cl-dataset {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid #e0e0e0;
+}
+
+.cl-dataset-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1814;
+    margin-bottom: 4px;
+}
+
+.cl-dataset-size {
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    color: #87CEEB;
+    background: #1a1814;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.cl-dataset p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Results */
+.cl-results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.cl-result {
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.cl-result-positive {
+    background: #f0f9f0;
+    border-color: #a8d5a8;
+}
+
+.cl-result-neutral {
+    background: #fff;
+}
+
+.cl-result-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.cl-result h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #1a1814;
+}
+
+.cl-result ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.cl-result ul li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+/* Future work */
+.cl-future-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.cl-future-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    border-top: 3px solid #87CEEB;
+}
+
+/* Plots */
+.cl-plots-heading {
+    font-size: 20px;
+    margin: 28px 0 16px;
+    color: #1a1814;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.cl-plots {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.cl-plot {
+    flex: 1;
+    max-width: 420px;
+    text-align: center;
+}
+
+.cl-plot img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.cl-plot-caption {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+    font-style: italic;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

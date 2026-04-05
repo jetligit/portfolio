@@ -111,3 +111,15 @@ nav ul {
     margin: 0;
     max-width: 100%;
 }
+
+.project-label {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #87CEEB;
+    color: #0C447C;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
