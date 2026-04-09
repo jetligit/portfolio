@@ -5,12 +5,12 @@ This is my personal portfolio website, built with JavaScript, HTML, and CSS. It 
 🔗 Live Site: https://d1v4vwwje7zw36.cloudfront.net/
 
 🌟 Features
-📁 Project Showcase – Displays my key projects with descriptions
-💼 Work Experience Section – Highlights my professional background
-📬 Contact Form – Integrated with Formspree for handling messages
-🎨 Clean UI Design – Simple, responsive, and user-friendly layout
+* 📁 Project Showcase – Displays my key projects with descriptions
+* 💼 Work Experience Section – Highlights my professional background
+* 📬 Contact Form – Integrated with Formspree for handling messages
+* 🎨 Clean UI Design – Simple, responsive, and user-friendly layout
 
 🛠️ Technologies Used
-Frontend: JavaScript, HTML, CSS
-Form Handling: Formspree
-Hosting: AWS (S3 Static Website Hosting)
+* Frontend: JavaScript, HTML, CSS
+* Form Handling: Formspree
+* Hosting: AWS (S3 Static Website Hosting)
