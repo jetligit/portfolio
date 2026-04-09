@@ -2,7 +2,7 @@
 
 This is my personal portfolio website, built with JavaScript, HTML, and CSS. It showcases my projects, highlights my work experience, and provides a way to connect with me. It also offers insight into who I am and what I value as a developer.
 
-🔗 Live Site: http://jetportfolio.s3-website.us-east-2.amazonaws.com/
+🔗 Live Site: https://d1v4vwwje7zw36.cloudfront.net/
 
 🌟 Features
 📁 Project Showcase – Displays my key projects with descriptions
