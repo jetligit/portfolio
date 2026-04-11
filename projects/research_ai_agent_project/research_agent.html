@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research AI Agent</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="research_agent.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <script src="../../../navbar.js"></script>
+    <script>
+        createHeader("header-container");
+    </script>
+
+    <div class="ra-container">
+
+        <!-- Header -->
+        <div class="ra-header">
+            <div class="ra-header-spacer"></div>
+            <h1 class="ra-title">Research AI Agent</h1>
+            <div class="ra-header-right">
+                <a class="ra-github-btn" href="https://github.com/jetligit" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="ra-hero">
+            <div class="ra-hero-label">Personal Project · Python AI Agent</div>
+            <p class="ra-subtitle">A command-line AI research assistant that searches the web, queries Wikipedia, and saves structured summaries to a text file.</p>
+            <div class="ra-meta-row">
+                <span class="ra-pill">Python</span>
+                <span class="ra-pill">LangChain</span>
+                <span class="ra-pill">GPT-4o-mini</span>
+                <span class="ra-pill">Pydantic</span>
+                <span class="ra-pill">DuckDuckGo</span>
+                <span class="ra-pill">Wikipedia API</span>
+            </div>
+        </div>
+
+        <!-- Overview + How it works -->
+        <div class="ra-grid">
+            <div class="ra-card">
+                <h2 class="ra-card-heading">Overview</h2>
+                <p>A Python-based AI research assistant built with LangChain and OpenAI's GPT-4o-mini. Given a topic, the agent searches the web and Wikipedia, generates a structured research summary, and saves the output to a text file.</p>
+            </div>
+            <div class="ra-card">
+                <h2 class="ra-card-heading">How It Works</h2>
+                <ul class="ra-list">
+                    <li>User inputs a research topic via the command line</li>
+                    <li>The agent decides which tools to use based on the query</li>
+                    <li>Results are parsed into a strict Pydantic schema</li>
+                    <li>Structured output is printed and saved to a text file</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="ra-card ra-card-full">
+            <h2 class="ra-card-heading">Tools & Architecture</h2>
+            <div class="ra-tools-grid">
+                <div class="ra-tool">
+                    <div class="ra-tool-name">Web Search</div>
+                    <div class="ra-tool-tech">DuckDuckGoSearchRun</div>
+                    <p>Searches the web for current information on the research topic.</p>
+                </div>
+                <div class="ra-tool">
+                    <div class="ra-tool-name">Wikipedia</div>
+                    <div class="ra-tool-tech">WikipediaQueryRun</div>
+                    <p>Queries Wikipedia for encyclopedic background on the topic.</p>
+                </div>
+                <div class="ra-tool">
+                    <div class="ra-tool-name">File Saver</div>
+                    <div class="ra-tool-tech">Custom Tool</div>
+                    <p>Saves structured research output to a timestamped text file.</p>
+                </div>
+                <div class="ra-tool">
+                    <div class="ra-tool-name">Output Parser</div>
+                    <div class="ra-tool-tech">PydanticOutputParser</div>
+                    <p>Enforces a strict schema — topic, summary, sources, and tools used.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sample Output -->
+        <div class="ra-card ra-card-full">
+            <h2 class="ra-card-heading">Sample Output</h2>
+            <p>Below is an example of the structured text file the agent produces after researching a topic.</p>
+            <div class="ra-screenshot">
+                <img src="research_output.png" alt="Sample research output text file">
+                <p class="ra-caption">Output file showing topic, summary, sources, and tools used for a query on Great White Sharks</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../../index.js"></script>
+</body>
+</html>

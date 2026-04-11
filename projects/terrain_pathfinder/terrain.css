@@ -1,0 +1,228 @@
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    background-color: #87CEEB;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+}
+
+.tp-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.tp-container p {
+    text-indent: 0 !important;
+    text-align: left;
+}
+
+/* Header */
+.tp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 8px;
+}
+
+.tp-header-spacer {
+    flex: 1;
+}
+
+.tp-header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tp-title {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0;
+    color: #1a1814;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+/* Hero */
+.tp-hero {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.tp-hero-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+
+.tp-subtitle {
+    font-size: 1.05rem;
+    color: #666;
+    max-width: 680px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center !important;
+}
+
+.tp-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tp-pill {
+    background: #87CEEB;
+    color: #0C447C;
+    font-size: 13px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.05em;
+}
+
+/* Cards */
+.tp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tp-card {
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 28px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.tp-card-full {
+    margin-bottom: 20px;
+}
+
+.tp-card-heading {
+    font-size: 20px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #87CEEB;
+    color: #1a1814;
+}
+
+.tp-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin: 0 0 10px;
+    text-indent: 0;
+    text-align: left;
+}
+
+.tp-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* List */
+.tp-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.tp-list li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Terrain grid */
+.tp-terrain-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.tp-terrain-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+}
+
+.tp-color-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.tp-terrain-name {
+    font-size: 14px;
+    color: #1a1814;
+    font-weight: 600;
+}
+
+.tp-terrain-cost {
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    color: #888;
+}
+
+/* Screenshot */
+.tp-screenshot {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.tp-screenshot img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    display: block;
+    margin: 0 auto;
+}
+
+.tp-caption {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center !important;
+}
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

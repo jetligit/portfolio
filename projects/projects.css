@@ -31,7 +31,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 2rem 0;
+    margin: 1.5rem 2rem 0;
 }
 
 .projects-header-spacer {
@@ -42,6 +42,34 @@ nav ul {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.projects-title-block {
+    flex: 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+    color: #1a1814;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.projects-subtitle {
+    font-size: 0.85rem;
+    color: #888;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    white-space: nowrap;
 }
 
 .github-btn {
@@ -62,34 +90,34 @@ nav ul {
     transform: translateY(-2px);
 }
 
-.projects-title {
-    text-align: center;
-    font-size: 32px;
-    margin: 30px 0 10px;
-}
-
 .project-box {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
     margin: 30px auto 60px;
-    max-width: 960px;
+    max-width: 1100px;
+    padding: 0 20px;
 }
 
 .project-card {
-    width: 280px;
-    padding: 24px 20px;
+    width: auto;
+    padding: 28px 20px;
     border-radius: 16px;
-    background: #f5f5f5;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 130px;
+    justify-content: center;
+    background: #f5f5f5;
 }
 
 .project-card:hover:not(.no-link) {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
 }
 
 .project-card.no-link {
@@ -99,9 +127,66 @@ nav ul {
 
 .project-card h2 {
     font-size: 20px;
-    margin: 0 0 10px;
+    margin: 0;
     text-align: center;
+    line-height: 1.4;
 }
+
+.project-label {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+/* Category gradients */
+.card-database {
+    background: linear-gradient(135deg, #e6f1fb 0%, #b5d4f4 100%);
+}
+.card-database .project-label {
+    background: #0C447C;
+    color: #B5D4F4;
+}
+.card-database h2 { color: #042C53; }
+
+.card-fullstack {
+    background: linear-gradient(135deg, #e1f5ee 0%, #9fe1cb 100%);
+}
+.card-fullstack .project-label {
+    background: #085041;
+    color: #9FE1CB;
+}
+.card-fullstack h2 { color: #04342C; }
+
+.card-ml {
+    background: linear-gradient(135deg, #eeedfe 0%, #afa9ec 100%);
+}
+.card-ml .project-label {
+    background: #3C3489;
+    color: #CECBF6;
+}
+.card-ml h2 { color: #26215C; }
+
+.card-ai {
+    background: linear-gradient(135deg, #faeeda 0%, #fac775 100%);
+}
+.card-ai .project-label {
+    background: #633806;
+    color: #FAC775;
+}
+.card-ai h2 { color: #412402; }
+
+.card-other {
+    background: linear-gradient(135deg, #f1efe8 0%, #d3d1c7 100%);
+}
+.card-other .project-label {
+    background: #444441;
+    color: #D3D1C7;
+}
+.card-other h2 { color: #2C2C2A; }
 
 .project-card p {
     font-size: 14px;
@@ -110,16 +195,4 @@ nav ul {
     text-align: center;
     margin: 0;
     max-width: 100%;
-}
-
-.project-label {
-    display: inline-block;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    background: #87CEEB;
-    color: #0C447C;
-    padding: 3px 10px;
-    border-radius: 999px;
-    margin-bottom: 10px;
 }

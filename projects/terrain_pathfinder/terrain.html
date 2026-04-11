@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain Pathfinder</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="terrain.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <script src="../../../navbar.js"></script>
+    <script>
+        createHeader("header-container");
+    </script>
+
+    <div class="tp-container">
+
+        <!-- Header -->
+        <div class="tp-header">
+            <div class="tp-header-spacer"></div>
+            <h1 class="tp-title">Terrain Aware Pathfinder</h1>
+            <div class="tp-header-right"></div>
+        </div>
+
+        <!-- Hero -->
+        <div class="tp-hero">
+            <div class="tp-hero-label">Individual Project · Intro to AI</div>
+            <p class="tp-subtitle">An A*-based pathfinding system that computes the optimal route across real-world terrain using satellite map colors, elevation data, and terrain-dependent movement costs.</p>
+            <div class="tp-meta-row">
+                <span class="tp-pill">Java</span>
+                <span class="tp-pill">A* Search</span>
+                <span class="tp-pill">Heuristics</span>
+                <span class="tp-pill">Graph Search</span>
+                <span class="tp-pill">Geospatial</span>
+            </div>
+        </div>
+
+        <!-- Overview + How it works -->
+        <div class="tp-grid">
+            <div class="tp-card">
+                <h2 class="tp-card-heading">Overview</h2>
+                <p>The program takes a 395x500 terrain image, an elevation grid, and a control-point file as inputs. It determines the fastest traversal path between control points and overlays the result on the original map using pixel-level geospatial calculations.</p>
+            </div>
+            <div class="tp-card">
+                <h2 class="tp-card-heading">How It Works</h2>
+                <ul class="tp-list">
+                    <li>Parses terrain image pixel colors to assign movement cost per terrain type</li>
+                    <li>Loads elevation data to compute 3D distances between points</li>
+                    <li>Runs A* search with a Euclidean heuristic between each pair of control points</li>
+                    <li>Draws the optimal path in purple on the output image</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Terrain Types -->
+        <div class="tp-card tp-card-full">
+            <h2 class="tp-card-heading">Terrain Types & Movement Costs</h2>
+            <p>Each pixel color in the terrain image maps to a movement cost multiplier. The A* algorithm uses these costs to find the path of least resistance across the landscape.</p>
+            <div class="tp-terrain-grid">
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(248,148,18);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Open Land</div>
+                        <div class="tp-terrain-cost">Cost: 1</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(71,51,3);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Paved Road</div>
+                        <div class="tp-terrain-cost">Cost: 2</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(0,0,0); border: 1px solid #ccc;"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Footpath</div>
+                        <div class="tp-terrain-cost">Cost: 4</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(255,255,255); border: 1px solid #ccc;"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Easy Forest</div>
+                        <div class="tp-terrain-cost">Cost: 8</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(2,208,60);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Slow Run Forest</div>
+                        <div class="tp-terrain-cost">Cost: 13</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(255,192,0);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Rough Meadow</div>
+                        <div class="tp-terrain-cost">Cost: 40</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(2,136,40);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Walk Forest</div>
+                        <div class="tp-terrain-cost">Cost: 25</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(0,0,255);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Lake / Swamp</div>
+                        <div class="tp-terrain-cost">Cost: 500</div>
+                    </div>
+                </div>
+                <div class="tp-terrain-item">
+                    <div class="tp-color-dot" style="background: rgb(5,73,24);"></div>
+                    <div class="tp-terrain-info">
+                        <div class="tp-terrain-name">Impassable Vegetation</div>
+                        <div class="tp-terrain-cost">Cost: 100,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sample terrain image -->
+        <div class="tp-card tp-card-full">
+            <h2 class="tp-card-heading">Sample Terrain Map</h2>
+            <p>Below is an example input terrain image. Each color represents a different terrain type with its own movement cost. The pathfinder parses every pixel to build a weighted graph and overlays the computed optimal route in purple.</p>
+            <div class="tp-screenshot">
+                <img src="input_image.png" alt="Sample terrain map input">
+                <p class="tp-caption">Example terrain image showing open land, forests, lakes, roads, and out-of-bounds regions</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../../index.js"></script>
+</body>
+</html>
